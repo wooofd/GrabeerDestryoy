@@ -590,4 +590,4 @@ PowerShell -ExecutionPolicy Unrestricted -Command "$pathGlobPattern = "^""$($dir
 echo --- Empty trash (Recycle Bin)
 PowerShell -ExecutionPolicy Unrestricted -Command "$bin = (New-Object -ComObject Shell.Application).NameSpace(10); $bin.items() | ForEach {; Write-Host "^""Deleting $($_.Name) from Recycle Bin"^""; Remove-Item $_.Path -Recurse -Force; }"
 :: ----------------------------------------------------------
-                                                                                                                                                      
+                                                                                                                                                      
